@@ -4,7 +4,15 @@ var Schema = mongoose.Schema;
 // create a schema
 var songSchema = new Schema({
     artist: String,
+    track: String,
+    composer: String,
     album: String,
+    genre: String,
+    poster: String,
+    album_poster: String,
+    music: String,
+    country: String,
+    year: Number,
     created_at: Date,
     updated_at: Date
 });
