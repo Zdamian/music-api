@@ -52,7 +52,12 @@ app.post('/songs', function(req, res) {
     console.log(req.body);
     var song = new Song({
         artist: req.body.artist,
-        album: req.body.album
+        track: req.body.track,
+        album: req.body.album,
+        poster: req.body.poster,
+        album_poster: req.body.album_poster,
+        officialVideo: req.body.officialVideo,
+        year: req.body.year
     });
     song.save(function(err, song) {
         if (err) {
