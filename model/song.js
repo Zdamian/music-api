@@ -3,8 +3,16 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var songSchema = new Schema({
-    artist: String,
+    artist: { type: String, required: true },
+    track: { type: String, required: true },
+    composer: Array,
     album: String,
+    genre: Array,
+    poster: String,
+    album_poster: String,
+    officialVideo: String,
+    country: Array,
+    year: Number,
     created_at: Date,
     updated_at: Date
 });
