@@ -7,7 +7,7 @@ var Song = require('./model/song');
 var app = express();
 
 
-mongoose.connect('mongodb://localhost/songs_1');
+mongoose.connect('mongodb://localhost/songs_2');
 
 app.use(bodyParser.urlencoded({extended: true}));
 

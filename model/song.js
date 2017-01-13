@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var songSchema = new Schema({
-    artist: { type: String, required: true },
+    artist: { type: String, required: true, unique: false },
     track: { type: String, required: true },
     composer: Array,
     album: String,
