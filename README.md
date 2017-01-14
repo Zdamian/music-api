@@ -21,6 +21,7 @@ To clone this repo and run API simply run the following commands
 ```bash
 >> git clone git@github.com:Zdamian/music-api.git
 >> cd music-api
+>> npm install
 >> npm run loaddata
 >> nodemon
 ```
