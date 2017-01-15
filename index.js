@@ -78,6 +78,15 @@ app.put('/songs/:id', function(req, res) {
             res.send(404);
         } else {
             song.artist = req.body.artist;
+            song.track = req.body.track;
+            song.composer = req.body.composer;
+            song.album = req.body.album;
+            song.genre = req.body.genre;
+            song.poster = req.body.poster;
+            song.album_poster = req.body.album_poster;
+            song.officialVideo = req.body.officialVideo;
+            song.country = req.body.country;
+            song.year = req.body.year;
             song.save(function(err, song) {
                 if (err) {
                     res.send(404);
